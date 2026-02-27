@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE9A7A87-E38F-4446-A6F5-9B7E5C1D2421}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DR_CREATIVE.My.MyApplication</StartupObject>
+    <RootNamespace>DR_CREATIVE</RootNamespace>
+    <AssemblyName>DR_CREATIVE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DR_CREATIVE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DR_CREATIVE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>STYLES\logo0.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMS\EXPENSES\AddNewExpenseForm.Designer.vb">
+      <DependentUpon>AddNewExpenseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EXPENSES\AddNewExpenseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\AddNewUserForm.Designer.vb">
+      <DependentUpon>AddNewUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\AddNewUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\AddPatientForm.Designer.vb">
+      <DependentUpon>AddPatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\AddPatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\AvailableAppointmentsForm.Designer.vb">
+      <DependentUpon>AvailableAppointmentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\AvailableAppointmentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\CurrentConsultationForm.Designer.vb">
+      <DependentUpon>CurrentConsultationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\CurrentConsultationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\EXPENSES\ExpensesForm.Designer.vb">
+      <DependentUpon>ExpensesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\EXPENSES\ExpensesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\COMMUNICATIONS\INTERNAL\InternalCommunicationForm.Designer.vb">
+      <DependentUpon>InternalCommunicationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\COMMUNICATIONS\INTERNAL\InternalCommunicationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\LOGIN\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FORMS\COMMUNICATIONS\EXTERNAL\PatientCommunicationForm.Designer.vb">
+      <DependentUpon>PatientCommunicationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\COMMUNICATIONS\EXTERNAL\PatientCommunicationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\PrintPatientFileForm.Designer.vb">
+      <DependentUpon>PrintPatientFileForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\PrintPatientFileForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\DOCTOR\PrintPrescriptionForm.Designer.vb">
+      <DependentUpon>PrintPrescriptionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\DOCTOR\PrintPrescriptionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\QuickBookingForm.Designer.vb">
+      <DependentUpon>QuickBookingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\QuickBookingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REMINDERS\SETTINGS\ReminderAndNotificationManagementForm.Designer.vb">
+      <DependentUpon>ReminderAndNotificationManagementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REMINDERS\SETTINGS\ReminderAndNotificationManagementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REMINDERS\MESSAGE\ReminderScreen.Designer.vb">
+      <DependentUpon>ReminderScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REMINDERS\MESSAGE\ReminderScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REPORTS\ReportsScreen.Designer.vb">
+      <DependentUpon>ReportsScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\REPORTS\ReportsScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\REVENUES\RevenueForm.Designer.vb">
+      <DependentUpon>RevenueForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\REVENUES\RevenueForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\SearchPatientForm.Designer.vb">
+      <DependentUpon>SearchPatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\PATIENTS\SearchPatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SERVICES\ServiceManagementForm.Designer.vb">
+      <DependentUpon>ServiceManagementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SERVICES\ServiceManagementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\SYSTEM\SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\SETTINGS\SYSTEM\SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STYLES\UIStylingModule.vb" />
+    <Compile Include="FORMS\APPOINTMENTS\WaitingListForm.Designer.vb">
+      <DependentUpon>WaitingListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\APPOINTMENTS\WaitingListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\DOCTOR\WritePrescriptionForm.Designer.vb">
+      <DependentUpon>WritePrescriptionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\DOCTOR\WritePrescriptionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORMS\APPOINTMENTS\AvailableAppointmentsForm.resx">
+      <DependentUpon>AvailableAppointmentsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\APPOINTMENTS\CurrentConsultationForm.resx">
+      <DependentUpon>CurrentConsultationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\APPOINTMENTS\QuickBookingForm.resx">
+      <DependentUpon>QuickBookingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\APPOINTMENTS\WaitingListForm.resx">
+      <DependentUpon>WaitingListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\COMMUNICATIONS\EXTERNAL\PatientCommunicationForm.resx">
+      <DependentUpon>PatientCommunicationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\COMMUNICATIONS\INTERNAL\InternalCommunicationForm.resx">
+      <DependentUpon>InternalCommunicationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\DOCTOR\PrintPrescriptionForm.resx">
+      <DependentUpon>PrintPrescriptionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\DOCTOR\WritePrescriptionForm.resx">
+      <DependentUpon>WritePrescriptionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\EXPENSES\AddNewExpenseForm.resx">
+      <DependentUpon>AddNewExpenseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\EXPENSES\ExpensesForm.resx">
+      <DependentUpon>ExpensesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LOGIN\AddNewUserForm.resx">
+      <DependentUpon>AddNewUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\LOGIN\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\PATIENTS\AddPatientForm.resx">
+      <DependentUpon>AddPatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\PATIENTS\PrintPatientFileForm.resx">
+      <DependentUpon>PrintPatientFileForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\PATIENTS\SearchPatientForm.resx">
+      <DependentUpon>SearchPatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\REVENUES\RevenueForm.resx">
+      <DependentUpon>RevenueForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SERVICES\ServiceManagementForm.resx">
+      <DependentUpon>ServiceManagementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SETTINGS\REMINDERS\MESSAGE\ReminderScreen.resx">
+      <DependentUpon>ReminderScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SETTINGS\REMINDERS\SETTINGS\ReminderAndNotificationManagementForm.resx">
+      <DependentUpon>ReminderAndNotificationManagementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SETTINGS\REPORTS\ReportsScreen.resx">
+      <DependentUpon>ReportsScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\SETTINGS\SYSTEM\SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STYLES\logo.ico" />
+    <Content Include="STYLES\logo0.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
